@@ -1,14 +1,12 @@
 .container {
-  padding-top: 2%;
-  padding-left: 10%;
-  border-top: 10px solid grey;
+  padding-top: 20px;
   .navigation {
     align-items: center;
     display: flex;
     column-gap: 3rem;
     .items {
       display: flex;
-      column-gap: 2rem;
+      column-gap: 10px;
       font-size: 18px;
       a {
         text-decoration: none;

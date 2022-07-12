@@ -14,3 +14,58 @@
         </p>
     </div>
 </div>
+<div class="section bg-blue relative">
+    <div class="relative">
+        <div class="mission md:text-center">
+            <h2 class="text-white tracking-tight md:text-5xl">Our Mission</h2>
+            <p class="text-lg tracking-tight text-blue-100">All the services you need, all in one place.</p>
+        </div>
+    </div>
+    <div class="grid items-center lg:grid-cols-12 tabs">
+        <div class="col-span-5">
+            <div class="mission-details-1" role="tablist" aria-orientation="vertical">
+                <div class="group relative p-1.5" (click)="activeTab = 'it-training';">
+                    <h3>
+                        <button id="it-training-btn" class="grid-button text-blue-100 hover:text-white">
+                            <span>IT Training</span>
+                        </button>
+                    </h3>
+                    <p class="text-blue-100 hover:text-white group-hover:text-white">
+                        Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not
+                        supported.
+                    </p>
+                </div>
+                <div class="group relative p-1.5" (click)="activeTab = 'it-training1';">
+                    <h3>
+                        <button id="it-training-btn1" class="grid-button text-blue-100 hover:text-white">
+                            <span>IT Training</span>
+                        </button>
+                    </h3>
+                    <p class="text-blue-100 hover:text-white">
+                        Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not
+                        supported.
+                    </p>
+                </div>
+                <div class="group relative p-1.5">
+                    <h3>
+                        <button class="grid-button text-blue-100 hover:text-white">
+                            <span>IT Training</span>
+                        </button>
+                    </h3>
+                    <p class="text-blue-100 hover:text-white">
+                        Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not
+                        supported.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-7">
+            <div *ngIf="activeTab == 'it-training'">
+                <p>This is hello</p>
+            </div>
+            <div *ngIf="activeTab == 'it-training1'">
+                <p>This is hello123</p>
+            </div>
+        </div>
+    </div>
+</div>
