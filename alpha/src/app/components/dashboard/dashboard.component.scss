@@ -26,3 +26,15 @@
     }
   }
 }
+.router-outlet {
+  min-height: 590px;
+}
+.footer {
+  padding: 2% 2% 2% 15%;
+  .align-right {
+    text-align: right;
+  }
+  a {
+    padding-right: 15px;
+  }
+}
