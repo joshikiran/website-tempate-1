@@ -1,1 +1,48 @@
-<p>services works!</p>
+<div class="services">
+    <h1>Simplify your needs.</h1>
+    <div class="details">
+        <p>We provide a wide range of professional services to meet your needs. We promise to provide every service with
+            a smile, and to your highest level of satisfaction. </p>
+    </div>
+    <div class="section serv-details row">
+        <div class="col-4" [ngClass]="activeService == 'it-training'?'section-enable':'section-disable'"
+            (click)="activeService = 'it-training'">
+            <div>
+                <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                    <p class="sec-heading">IT Training</p>
+                </div>
+                <div>
+                    <p>We talked about reporting in the section above but we needed three items here, so mentioning it
+                        one more time for posterity.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" [ngClass]="activeService == 'it-staffing'?'section-enable':'section-disable'"
+            (click)="activeService = 'it-staffing'">
+            <div>
+                <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                    <p class="sec-heading">IT Staffing</p>
+                </div>
+                <div>
+                    <p>We talked about reporting in the section above but we needed three items here, so mentioning it
+                        one more time for posterity.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" [ngClass]="activeService == 'mock-interviews'?'section-enable':'section-disable'"
+            (click)="activeService = 'mock-interviews'">
+            <div>
+                <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                    <p class="sec-heading">Mock Interviews</p>
+                </div>
+                <div>
+                    <p>We talked about reporting in the section above but we needed three items here, so mentioning it
+                        one more time for posterity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

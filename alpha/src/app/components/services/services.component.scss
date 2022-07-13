@@ -1,0 +1,29 @@
+.services {
+  padding-right: 2rem;
+  text-align: center;
+  max-width: 80rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  .details {
+    --tw-text-opacity: 1;
+    color: rgb(51 65 85 / var(--tw-text-opacity));
+    letter-spacing: -0.025em;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    max-width: 40rem;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-disable {
+    color: grey;
+  }
+  .section-enable {
+    i,
+    .sec-heading {
+      color: blue;
+    }
+  }
+}
