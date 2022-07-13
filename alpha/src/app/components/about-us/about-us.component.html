@@ -1,1 +1,38 @@
-<p>about-us works!</p>
+<div class="about-us">
+    <div class="section serv-details row">
+        <div class="col-5" [ngClass]="activeService == 'it-training'?'section-enable':'section-disable'"
+            (click)="activeService = 'it-training'">
+            <div class="section-details">
+                <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                    <p class="sec-heading">Who we are</p>
+                </div>
+                <div>
+                    <p>ITProHire is a leading global information technology, consulting and business process services
+                        company based in USA offering Application Development, Maintenance, and Testing. Being a Premier
+                        Technology Service Organization, our primary focus is on IT Services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+
+        </div>
+        <div class="col-5" [ngClass]="activeService == 'it-staffing'?'section-enable':'section-disable'"
+            (click)="activeService = 'it-staffing'">
+            <div class="section-details">
+                <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                    <p class="sec-heading">What we do</p>
+                </div>
+                <div>
+                    <p>We offer Resource level support across the IT lifecycle with large IT transformation programs for
+                        BFSI, Retail & Manufacturing services organizations. we provide various IT services and
+                        ITProHire is passionate to find the right technology solution for your projects or product
+                        development. Understanding the importance of approaching a project with the right resources and
+                        tools can bring success for the most complicated project. We are client focused and
+                        result-oriented. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -28,13 +28,18 @@
 }
 .router-outlet {
   min-height: 590px;
+  background: #f8fafc;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .footer {
-  padding: 2% 2% 2% 15%;
+  padding: 2% 2% 1% 15%;
+  color: gray;
   .align-right {
     text-align: right;
   }
   a {
     padding-right: 15px;
+    color: gray;
   }
 }

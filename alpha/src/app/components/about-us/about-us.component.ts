@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutUsComponent implements OnInit {
 
   constructor() { }
-
+  activeService = "it-training";
   ngOnInit() {
   }
 

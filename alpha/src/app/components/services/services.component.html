@@ -5,9 +5,9 @@
             a smile, and to your highest level of satisfaction. </p>
     </div>
     <div class="section serv-details row">
-        <div class="col-4" [ngClass]="activeService == 'it-training'?'section-enable':'section-disable'"
+        <div class="col-md-4 col-sm" [ngClass]="activeService == 'it-training'?'section-enable':'section-disable'"
             (click)="activeService = 'it-training'">
-            <div>
+            <div class="section-details">
                 <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
                 <div>
                     <p class="sec-heading">IT Training</p>
@@ -18,9 +18,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-4" [ngClass]="activeService == 'it-staffing'?'section-enable':'section-disable'"
+        <div class="col-md-4 col-sm" [ngClass]="activeService == 'it-staffing'?'section-enable':'section-disable'"
             (click)="activeService = 'it-staffing'">
-            <div>
+            <div class="section-details">
                 <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
                 <div>
                     <p class="sec-heading">IT Staffing</p>
@@ -31,9 +31,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-4" [ngClass]="activeService == 'mock-interviews'?'section-enable':'section-disable'"
+        <div class="col-md-4 col-sm" [ngClass]="activeService == 'mock-interviews'?'section-enable':'section-disable'"
             (click)="activeService = 'mock-interviews'">
-            <div>
+            <div class="section-details">
                 <i class="fa fa-2x fa-graduation-cap" aria-hidden="true"></i>
                 <div>
                     <p class="sec-heading">Mock Interviews</p>
