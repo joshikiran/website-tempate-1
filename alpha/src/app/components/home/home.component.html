@@ -21,12 +21,13 @@
             <p class="text-lg tracking-tight text-blue-100">All the services you need, all in one place.</p>
         </div>
     </div>
-    <div class="grid items-center lg:grid-cols-12 tabs">
-        <div class="col-span-5">
-            <div class="mission-details-1" role="tablist" aria-orientation="vertical">
-                <div class="group relative p-1.5" (click)="activeTab = 'it-training';">
+    <div class="items-center row details">
+        <div class="col-5">
+            <div class="mission-details-1">
+                <div class="relative p-1.5" (click)="activeTab = 'it-training';"
+                    [ngClass]="activeTab == 'it-training'?'group-active':'group'">
                     <h3>
-                        <button class="grid-button text-blue-100 hover:text-white">
+                        <button class="transparent-button text-blue-100 hover:text-white">
                             <span>IT Training</span>
                         </button>
                     </h3>
@@ -35,9 +36,10 @@
                         supported.
                     </p>
                 </div>
-                <div class="group relative p-1.5" (click)="activeTab = 'it-staffing';">
+                <div class="relative p-1.5" (click)="activeTab = 'it-staffing';"
+                    [ngClass]="activeTab == 'it-staffing'?'group-active':'group'">
                     <h3>
-                        <button class="grid-button text-blue-100 hover:text-white">
+                        <button class="transparent-button text-blue-100 hover:text-white">
                             <span>IT Staffing</span>
                         </button>
                     </h3>
@@ -46,9 +48,10 @@
                         supported.
                     </p>
                 </div>
-                <div class="group relative p-1.5" (click)="activeTab = 'mock-interviews';">
+                <div class="relative p-1.5" (click)="activeTab = 'mock-interviews';"
+                    [ngClass]="activeTab == 'mock-interviews'?'group-active':'group'">
                     <h3>
-                        <button class="grid-button text-blue-100 hover:text-white">
+                        <button class="transparent-button text-blue-100 hover:text-white">
                             <span>Mock Interviews</span>
                         </button>
                     </h3>
@@ -59,9 +62,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-span-7">
+        <div class="col-7 section-background">
             <div *ngIf="activeTab == 'it-training'">
-                <p class="text-blue-100 hover:text-white letter-spacing">Where passion hits the road to success. We are
+                <p class="p-details letter-spacing">Where passion hits the road to success. We are
                     always looking
                     for passionate candidates who are
                     willing to learn and get trained with our amazing training staff. We have workshops, hiring events,
@@ -71,7 +74,7 @@
                     at info@itprohire.com</p>
             </div>
             <div *ngIf="activeTab == 'it-staffing'">
-                <p class="text-blue-100 hover:text-white letter-spacing">We vet our candidates and groom them to become
+                <p class="p-details letter-spacing">We vet our candidates and groom them to become
                     finest IT
                     consultants you are looking for. We have unique process in finding right talent and a very capable
                     team in training the candidates to be perfect for the professional world.
@@ -79,7 +82,7 @@
                     us at info@itprohire.com and we will connect you with the right candidates.</p>
             </div>
             <div *ngIf="activeTab == 'mock-interviews'">
-                <p class="text-blue-100 hover:text-white letter-spacing">We provide Industry-standard mock interviews to
+                <p class="p-details letter-spacing">We provide Industry-standard mock interviews to
                     analyze and
                     provide thorough feedback on what you
                     need to improve on to pass your upcoming interviews. we have a qualified team to conduct your Mocks
